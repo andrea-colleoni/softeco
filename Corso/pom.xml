@@ -9,6 +9,7 @@
 		<module>Web</module>
 		<module>Business</module>
 		<module>DataAccess</module>
+		<module>ClientEjb</module>
 	</modules>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -41,7 +42,13 @@
 			<groupId>org.jboss.weld</groupId>
 			<artifactId>weld-core-impl</artifactId>
 			<version>2.4.4.Final</version>
-			<scope>test</scope>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>

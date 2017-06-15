@@ -5,18 +5,27 @@
     <artifactId>Corso</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>Business</artifactId>
+  <artifactId>ClientEjb</artifactId>
   <dependencies>
   	<dependency>
   		<groupId>it.softeco</groupId>
-  		<artifactId>DataAccess</artifactId>
+  		<artifactId>Business</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   	<dependency>
-  		<groupId>org.jboss.javaee</groupId>
-  		<artifactId>jboss-ejb-api-3.0_spec</artifactId>
-  		<version>5.0.2.GA</version>
-  		<scope>provided</scope>
+  		<groupId>org.jboss</groupId>
+  		<artifactId>jboss-remote-naming</artifactId>
+  		<version>1.0.0.Final</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.jboss.xnio</groupId>
+  		<artifactId>xnio-nio</artifactId>
+  		<version>3.4.5.Final</version>
+  	</dependency>
+    	<dependency>
+  		<groupId>org.jboss.xnio</groupId>
+  		<artifactId>xnio-api</artifactId>
+  		<version>3.4.5.Final</version>
+  	</dependency>	
   </dependencies>
 </project>

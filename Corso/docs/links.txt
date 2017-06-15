@@ -1,0 +1,8 @@
+REQUIRED vs REQUIRED NEW
+http://sunmingtao.blogspot.it/2011/09/required-vs-requiresnew-transaction.html
+
+Panoramica EJB TRansactions
+http://javabeat.net/managing-transactions-in-ejb-3-0/
+
+XA Data Source in JBoss
+https://access.redhat.com/documentation/en-US/JBoss_Enterprise_Application_Platform/6/html/Administration_and_Configuration_Guide/Example_Oracle_XA_Datsource1.html
