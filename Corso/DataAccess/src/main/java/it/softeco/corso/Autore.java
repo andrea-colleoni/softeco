@@ -27,9 +27,9 @@ public class Autore {
 	
 	@ManyToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
 	@JoinTable(name="libro_autore", joinColumns={
-			@JoinColumn(referencedColumnName="idautore",columnDefinition="id_autore")
+			@JoinColumn(referencedColumnName="idautore",name="id_autore")
 	}, inverseJoinColumns={
-			@JoinColumn(referencedColumnName="id", columnDefinition="id_libro")
+			@JoinColumn(referencedColumnName="id", name="id_libro")
 	})
 	List<Libro> libri;
 

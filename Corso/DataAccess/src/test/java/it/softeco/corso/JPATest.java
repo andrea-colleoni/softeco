@@ -49,8 +49,8 @@ public class JPATest {
 		Libro l = new Libro();
 		Autore a = new Autore();
 		
-		l.setTitolo("Test xx");
-		a.setCognome("Rossi 2");
+		l.setTitolo("Test yy");
+		a.setCognome("Rossi 3");
 		
 		l.setAutori(new ArrayList<Autore>());
 		l.getAutori().add(a);
