@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redux Todos Example</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="root2"></div>
+    <button onclick="rem();">rimuovi!</button>
+    <button onclick="agg();">aggiungi!</button>
+    <script>
+      function rem() {
+        store2.dispatch(resetStore());
+        var el = document.getElementById("root2");
+        el.parentNode.removeChild(el);
+      }
+       function agg() {
+         if (!document.getElementById("root2")) {
+          var div = document.createElement('div');
+          div.id = "root2";
+          document.body.appendChild(div);
+         }
+        render(
+          window.app2,
+          document.getElementById('root2')
+        )
+      }  
+    </script>
+  </body>
+</html>
