@@ -1,11 +1,15 @@
 import { combineReducers } from 'redux'
 import todos from './todos'
 import visibilityFilter from './visibilityFilter'
+import stories from './stories'
 
 
-const todoApp = combineReducers({
+export const todoApp = combineReducers({
   todos,
   visibilityFilter
 })
 
-export default todoApp
+export const storiesApp = combineReducers({
+  stories
+})
+

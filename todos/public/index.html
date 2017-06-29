@@ -12,20 +12,21 @@
     <button onclick="agg();">aggiungi!</button>
     <script>
       function rem() {
-        store2.dispatch(resetStore());
+        //store2.dispatch(resetStore());
+        unmountComponentAtNode(document.getElementById('root2'));
+        /*
         var el = document.getElementById("root2");
         el.parentNode.removeChild(el);
+        */
       }
        function agg() {
+         /*
          if (!document.getElementById("root2")) {
           var div = document.createElement('div');
           div.id = "root2";
           document.body.appendChild(div);
          }
-        render(
-          window.app2,
-          document.getElementById('root2')
-        )
+         */
       }  
     </script>
   </body>
